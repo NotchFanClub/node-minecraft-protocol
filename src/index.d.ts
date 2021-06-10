@@ -80,7 +80,7 @@ declare module 'minecraft-protocol' {
 		motd?: string
 		port?: number
 		version?: string
-		beforePing?: (response: any, client: Client, callback?: (result: any) => any) => any
+		beforePing?: (response: any, client: Client, callback?: (err: any, result: any) => any) => any
 		errorHandler?: (client: Client, error: Error) => void
 		agent?: Agent
 	}
